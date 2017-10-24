@@ -1,8 +1,8 @@
-### React & Redux YouTube fun. Made using [this](https://www.udemy.com/react-redux/) Udemy tutorial.
+### React YouTube fun. Made using [this](https://www.udemy.com/react-redux/) Udemy tutorial.
 
 #### You can do the same :heart:
 
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Clone the repo below, install dependencies, then start the gulp process:
 
 ```
 > git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
