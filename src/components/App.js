@@ -5,6 +5,7 @@ import YTSearch from 'youtube-api-search';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
 import { API_KEY } from '../../config.env';
+import styled from 'styled-components';
 
 class App extends Component {
   constructor(props) {
@@ -25,9 +26,13 @@ class App extends Component {
 
   render() {
     const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 400)
-    // this function can only be run once every 400ms
+    const Title = styled.h1`
+      font-size: 2.5em;
+      color: purple;
+    `;
     return (
       <div>
+        <Title>Amelietube</Title>
         <SearchBar onSearchTermChange={videoSearch}/>
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList

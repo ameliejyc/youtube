@@ -1,5 +1,10 @@
 import React from 'react';
 import VideoListItem from './VideoListItem';
+import styled from 'styled-components';
+
+const UnorderedList = styled.ul`
+  width: auto;
+`;
 
 const VideoList = (props) => {
   // props has to be passed in here as it is a functional component. if it was class-based it could be passed in anywhere in the render as this.props
@@ -15,9 +20,9 @@ const VideoList = (props) => {
   })
 
   return(
-    <ul className="col-md-4 list-group">
+    <UnorderedList>
       {videoItems}
-    </ul>
+    </UnorderedList>
   )
 }
 
